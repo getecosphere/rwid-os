@@ -1,0 +1,6 @@
+[workspace]
+resolver = "3"
+members = ["crates/rwid-compositor", "crates/rwid-shell"]
+
+[profile.release]
+lto = "thin"

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'">
+<title>ecOS Lite</title>
+<link rel="stylesheet" href="lite.css">
+<script src="lite.js" defer></script>
+</head>
+<body>
+<header id="bar" class="desktop-only">
+  <span class="brand">ecOS Lite</span>
+  <time id="clock"></time>
+  <span id="state"></span>
+</header>
+<main id="note" class="desktop-only">
+  <h1 id="note-title"></h1>
+  <p id="note-text"></p>
+  <p class="keys"><kbd>Super</kbd> <span id="key-menu"></span> · <kbd>Super</kbd>+<kbd>Enter</kbd> <span id="key-term"></span></p>
+</main>
+<div id="backdrop" class="chrome-only" hidden></div>
+<section id="menu" class="chrome-only" hidden>
+  <input id="search" type="search" autocomplete="off" spellcheck="false">
+  <ul id="apps" role="listbox"></ul>
+</section>
+<nav id="dock" class="chrome-only">
+  <button id="start" type="button" aria-haspopup="listbox"><span class="grid"></span></button>
+  <button id="term" type="button" hidden></button>
+  <span id="chips"></span>
+</nav>
+</body>
+</html>
